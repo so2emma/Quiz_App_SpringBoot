@@ -17,4 +17,8 @@ public class QuestionService {
     public List<Question> getAllQuestions() {
         return questionDoa.findAll();
     }
+
+    public List<Question> getQuestionsByCategory(String category){
+        return questionDoa.findByCategory(category);
+    }
 }
