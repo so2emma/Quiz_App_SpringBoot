@@ -2,7 +2,7 @@ package com.dev.quizapp.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dev.quizapp.Question;
+import com.dev.quizapp.model.Question;
 import com.dev.quizapp.service.QuestionService;
 
 import java.util.List;
