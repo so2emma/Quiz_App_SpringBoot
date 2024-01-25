@@ -21,4 +21,9 @@ public class QuestionService {
     public List<Question> getQuestionsByCategory(String category){
         return questionDoa.findByCategory(category);
     }
+
+    public String addQuestion(Question question) {
+         questionDoa.save(question);
+         return "Success";
+    }
 }
